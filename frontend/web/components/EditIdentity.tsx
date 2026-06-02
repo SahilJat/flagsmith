@@ -72,7 +72,7 @@ const EditIdentity: FC<EditIdentityType> = ({ data, environmentId }) => {
       >
         Edit
       </Button>
-      <ErrorMessage>{error}</ErrorMessage>
+      <ErrorMessage error={error} />
     </>
   )
 }

@@ -75,7 +75,7 @@ const MyComponent = () => {
   )
 
   if (isLoading) return <Loader />
-  if (error) return <ErrorMessage>{error}</ErrorMessage>
+  if (error) return <ErrorMessage error={error} />
 
   return (
     <div>
@@ -213,7 +213,7 @@ const handleSubmit = async () => {
 const { data, error, isLoading, refetch } = useThing({ id: '123' })
 
 // Display error in UI, it won't render if error is undefined
-return <ErrorMessage>{error}</ErrorMessage>
+return <ErrorMessage error={error} />
 
 // Retry on error
 const handleRetry = () => refetch()

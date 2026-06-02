@@ -426,7 +426,7 @@ class AccountSettingsPage extends Component {
                             name='Confirm New Password*'
                           />
                           {passwordError && (
-                            <ErrorMessage>{passwordError}</ErrorMessage>
+                            <ErrorMessage error={passwordError} />
                           )}
                           <div className='text-right mt-5'>
                             <Button

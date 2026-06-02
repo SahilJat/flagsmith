@@ -91,7 +91,7 @@ import { Res } from 'common/types/responses'
 ```typescript
 import { Tabs } from 'components/base/forms/Tabs'
 import Loader from 'components/base/Loader'
-import { ErrorMessage } from 'components/base/Messages'
+import ErrorMessage from 'components/messages/ErrorMessage'
 ```
 
 ### Hooks

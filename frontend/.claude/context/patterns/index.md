@@ -78,7 +78,7 @@ const CompanyInvoiceTable: FC = () => {
   )
 
   if (isLoading) return <Loader />
-  if (error) return <ErrorMessage>{error}</ErrorMessage>
+  if (error) return <ErrorMessage error={error} />
 
   return (
     <ContentContainer>

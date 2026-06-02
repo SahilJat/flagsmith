@@ -14,7 +14,7 @@ Tables should be self-contained components that fetch their own data and handle 
 import { useGetInvoicesQuery } from 'common/services/useInvoice'
 import { useDefaultSubscription } from 'common/services/useDefaultSubscription'
 import Loader from 'components/base/Loader'
-import { ErrorMessage } from 'components/base/Messages'
+import ErrorMessage from 'components/messages/ErrorMessage'
 import ContentContainer from './ContentContainer'
 
 const InvoiceTable: FC = () => {
